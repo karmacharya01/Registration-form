@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(100deg, #71b7e6, #9b59b6);
+}
+
+.container-box {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background-color: azure;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.container-box header {
+    font-size: 2rem;
+    font-weight: 1000;
+    text-align: center;
+    color: black;
+}
+
+.container-box .form {
+    margin-top: 25px;
+}
+
+.form .input {
+    flex: 1;
+    min-width: 250px;
+    margin-top: 25px;
+}
+
+.input label {
+    color: black;
+    font-size: 20px;
+    font-weight: lighter bold;
+}
+
+.form .input input {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.form .column {
+    display: flex;
+    column-gap: 15px;
+    flex-wrap: wrap;
+}
+
+.form .gender-box ,
+.form .qualification-box{
+    margin-top: 20px;
+}
+
+.gender-box h3, 
+.qualification-box h3 {
+    color: #333;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.form :where(.gender-option, .gender),
+.form :where(.qualification-option, .qualification)  {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+
+.form .gender ,
+.form .qualification{
+    column-gap: 5px;
+}
+
+.gender input,
+.qualification input {
+    accent-color: rgb(130, 106, 251);
+}
+
+.form :where(.gender input, .gender label), 
+.form :where(.qualification input, .qualification label){
+    cursor: pointer;
+}
+
+.gender label ,
+.qualification label{
+    color: #707070;
+}
+
+.form button {
+  height: 55px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: rgb(130, 106, 251);
+}
+.form button:hover {
+  background: rgb(88, 56, 250);
+}
+
+
+@media screen and (max-width: 768px) {
+    .form .column {
+        flex-direction: column;
+    }
+    .form .input {
+        width: 100%;
+    }
+    .form :where(.gender-option, .gender) {
+    row-gap: 15px;
+  }
+}
