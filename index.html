@@ -7,37 +7,47 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
     <div class="container-box">
+
       <header>Registration Form</header>
+
       <form action="#" class="form">
+
         <div class="column">
           <div class="input">
             <label> First Name </label>
             <input type="text" placeholder="Enter First Name" required />
           </div>
+
           <div class="input">
             <label> Last Name </label>
             <input type="text" placeholder="Enter Last Name" required />
           </div>
         </div>
+
         <div class="input">
           <label> Email </label>
           <input type="text" placeholder="abc@gmail.com" required />
         </div>
+
         <div class="input">
           <label> Address</label>
           <input type="text" placeholder="Enter your Address" required />
         </div>
+
         <div class="column">
           <div class="input">
             <label> Phone No </label>
             <input type="text" placeholder="9876543210" required />
           </div>
+
           <div class="input">
             <label> Date of BIrth</label>
             <input type="date" placeholder="Enter your DOB" required />
           </div>
         </div>
+
         <div class="gender-box">
           <h3>Gender</h3>
           <div class="gender-option">
@@ -45,53 +55,65 @@
               <input type="radio" id="check-male" name="gender" checked />
               <label for="check-male"> Male</label>
             </div>
+
             <div class="gender">
               <input type="radio" id="check-female" name="gender" />
               <label for="check-female"> Female</label>
             </div>
+
             <div class="gender">
               <input type="radio" id="check-others" name="gender" />
               <label for="check-others"> Others</label>
             </div>
           </div>
         </div>
+
         <div class="qualification-box">
-      <h3>Qualifications</h3>
-      <div class="qualification-option">
-         <div class="qualification">
-          <input type="radio" id="ble" name="qualification[]" checked />
-          <label for="slc">DLE/BLE</label>
+          <h3>Qualifications</h3>
+          <div class="qualification-option">
+            <div class="qualification">
+              <input type="radio" id="ble" name="qualification[]" checked />
+              <label for="slc">DLE/BLE</label>
+            </div>
+
+            <div class="qualification">
+              <input type="radio" id="slc" name="qualification[]" />
+              <label for="slc">SLC/SEE</label>
+            </div>
+
+            <div class="qualification">
+              <input type="radio" id="plus2" name="qualification[]" />
+              <label for="plus2">+2 / Intermediate</label>
+            </div>
+
+            <div class="qualification">
+              <input type="radio" id="bachelor" name="qualification[]" />
+              <label for="bachelor">Bachelor's Degree</label>
+            </div>
+
+            <div class="qualification">
+              <input type="radio" id="master" name="qualification[]" />
+              <label for="master">Master's Degree</label>
+            </div>
+          </div>
         </div>
-        <div class="qualification">
-          <input type="radio" id="slc" name="qualification[]"  />
-          <label for="slc">SLC/SEE</label>
+
+        <div class="input">
+          <label> Citizenship </label>
         </div>
-        <div class="qualification">
-          <input type="radio" id="plus2" name="qualification[]" />
-          <label for="plus2">+2 / Intermediate</label>
-        </div>
-        <div class="qualification">
-          <input type="radio" id="bachelor" name="qualification[]" />
-          <label for="bachelor">Bachelor's Degree</label>
-        </div>
-        <div class="qualification">
-          <input type="radio" id="master" name="qualification[]" />
-          <label for="master">Master's Degree</label>
-        </div>
-      </div>
-    </div>
 
         <div class="column">
-          <div class="input">
-            <label> Citizenship </label>
+          <div class="input file-input">
+            <label>Front side citizenship </label>
             <input
               type="file"
               placeholder="Front size of citiizenship"
               required
             />
           </div>
-          <div class="input">
-            <label> "" </label>
+          
+          <div class="input file-input">
+            <label>Back side citizenship </label>
             <input
               type="file"
               placeholder="Front size of citiizenship"
@@ -99,6 +121,7 @@
             />
           </div>
         </div>
+
         <button>Submit</button>
       </form>
     </div>
