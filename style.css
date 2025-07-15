@@ -108,6 +108,15 @@ body {
 .qualification label{
     color: #707070;
 }
+/* Reduce vertical spacing for file inputs */
+.input.file-input {
+  margin-top: 10px;
+}
+
+.input.file-input input[type="file"] {
+  height: 45px;
+  padding: 5px;
+}
 
 .form button {
   height: 55px;
@@ -124,7 +133,6 @@ body {
 .form button:hover {
   background: rgb(88, 56, 250);
 }
-
 
 @media screen and (max-width: 768px) {
     .form .column {
